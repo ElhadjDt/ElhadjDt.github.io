@@ -1,0 +1,143 @@
+/* =====================================================
+   Academic minimal style (DTU-like)
+   Author: You
+   ===================================================== */
+
+/* Base */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+/* Links */
+a {
+  color: #003399;            /* classic academic blue */
+  text-decoration: underline;
+}
+a:visited {
+  color: #551a8b;
+}
+a:hover {
+  color: #001f66;
+}
+
+/* Layout container */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 18px 14px;
+}
+
+/* Header / Navigation */
+.site-header {
+  border-bottom: 1px solid #cccccc;
+  background: #f8f8f8;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+
+.menu {
+  font-size: 15px;
+}
+
+.menu a {
+  margin-left: 12px;
+}
+
+.menu a.active {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Main content */
+main {
+  margin-top: 12px;
+}
+
+/* Headings */
+h1 {
+  font-size: 26px;
+  margin: 0 0 8px 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 20px 0 6px 0;
+  font-weight: bold;
+}
+
+/* Paragraphs */
+p {
+  margin: 0 0 10px 0;
+}
+
+.muted {
+  color: #555555;
+}
+
+/* Two-column layout (photo + content) */
+.grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Portrait image */
+.portrait {
+  width: 180px;
+  height: auto;
+  border: 1px solid #bbbbbb;
+}
+
+/* Lists */
+ul {
+  margin: 6px 0 10px 20px;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 24px;
+  padding-top: 10px;
+  border-top: 1px solid #cccccc;
+  font-size: 14px;
+  color: #555555;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait {
+    width: 140px;
+  }
+
+  .menu a {
+    margin-left: 8px;
+  }
+}

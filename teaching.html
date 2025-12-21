@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ibrahima Dione — Teaching</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <div class="brand">Ibrahima Dione</div>
+    <nav class="menu" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="cv.html">Curriculum Vitae</a>
+      <a class="active" href="teaching.html">Teaching</a>
+      <a href="talks.html">Talks</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Teaching</h1>
+  <p class="muted">Courses taught.</p>
+
+  <h2>University of Moncton (Fall 2022 – Winter 2025)</h2>
+  <div class="card">
+    <ul class="list">
+      <li>Differential Calculus (MATH 1073)</li>
+      <li>Integral Calculus (MATH 1173)</li>
+      <li>Arithmetic (MATH 1413)</li>
+      <li>Sequences, Series, and Calculus in Rn (MATH 2013)</li>
+      <li>Algebra and Relations (MATH 2413)</li>
+      <li>Linear Algebra (MATH 2673)</li>
+      <li>Optimization (MATH 3163)</li>
+      <li>Mathematics Reading Seminar (MATH 6033)</li>
+    </ul>
+    <p class="muted"></p>
+  </div>
+
+  <h2>Université Laval</h2>
+  <div class="card">
+    <ul class="list">
+      <li>Stochastic Simulations and Applications in Finance (GSF 6024) — Winter 2021</li>
+      <li>Engineering Mathematics II (MAT 1910) — Winter 2016, Winter 2017</li>
+      <li>Numerical Analysis for Engineers (MAT 2910) — Winter 2011, Winter 2013</li>
+    </ul>
+    <p class="muted"></p>
+  </div>
+
+  <div class="footer">
+    © <span id="year"></span> Ibrahima Dione.
+  </div>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
